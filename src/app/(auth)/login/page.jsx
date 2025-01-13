@@ -15,8 +15,8 @@ function Login() {
     console.log(userName, password);
     if(userName === "admin" && password === "admin123"){
         sessionStorage.setItem("userId", "admin");
-        router.push("/");
-    }
+        router.push("/admin/dashboard");
+      }
     else{setErrorMessage("Invalid username or password.")}
     setLoading(false);
   };
